@@ -3,12 +3,10 @@ import * as Plugin from "./quartz/plugins"
 
 const config: QuartzConfig = {
   configuration: {
-    pageTitle: "🔓 vault - zeyus dot com",
+    pageTitle: "🔓 zeyus: vault",
     enableSPA: true,
     enablePopovers: true,
-    analytics: {
-      provider: "plausible",
-    },
+    analytics: null,
     baseUrl: "zeyus.com/vault",
     ignorePatterns: ["private", "templates", ".obsidian"],
     defaultDateType: "created",
