@@ -5,11 +5,7 @@ import * as Component from "./quartz/components"
 export const sharedPageComponents: SharedLayout = {
   head: Component.Head(),
   header: [],
-  footer: Component.Footer2({
-    links: {
-      "Main Site": "https://zeyus.com/",
-    },
-  }),
+  footer: Component.Footer2(),
 }
 
 // components for pages that display a single page (e.g. a single note)
@@ -22,6 +18,10 @@ export const defaultContentPageLayout: PageLayout = {
   ],
   left: [
     Component.PageTitle(),
+    Component.Hyperlink({
+      href: "https://zeyus.com/",
+      title: "< Main Site",
+    }),
     Component.MobileOnly(Component.Spacer()),
     Component.Search(),
     Component.Darkmode(),
