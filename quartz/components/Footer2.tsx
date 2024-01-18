@@ -12,6 +12,12 @@ export default ((opts?: Options) => {
     return (
       <footer class={`${displayClass ?? ""}`}>
         <hr />
+        <p>
+          Zeyus' vault is generated with <a href="https://quartz.jzhao.xyz/">Quartz</a>,{" "}
+          vault source code is available <a href="https://github.com/zeyus/vault">on GitHub</a>.
+          &copy; {year} <a href="https://github.com/zeyus">Zeyus</a>. Licensed under the{" "}
+          <a href="https://github.com/zeyus/vault/blob/master/LICENSE">MIT license</a>.
+        </p>
         <ul>
           {Object.entries(links).map(([text, link]) => (
             <li>
